@@ -19,9 +19,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-#    strategy:
-#      fail-fast: true  # Stop the job if any step fails
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
@@ -33,6 +30,7 @@ jobs:
 
     - name: Test with Maven
       run: mvn test
+      continue-on-error: true
 
     - name: Build with Maven
       run: mvn clean install
