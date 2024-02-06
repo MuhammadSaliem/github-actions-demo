@@ -19,6 +19,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      fail-fast: true  # Stop the job if any step fails
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
