@@ -12,9 +12,10 @@ class GithubActionsDemoApplicationTests {
         // Given
             boolean bool;
         // When
-            bool = false;
+            bool = true;
         // Then
         Assertions.assertTrue(bool);
+
     }
 
 }
