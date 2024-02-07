@@ -15,6 +15,7 @@ class GithubActionsDemoApplicationTests {
             bool = false;
         // Then
         Assertions.assertTrue(bool);
+
     }
 
 }
